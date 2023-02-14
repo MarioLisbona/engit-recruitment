@@ -52,21 +52,27 @@ function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link to="/features" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">
-                  Features
+                  Candidates
                 </Link>
               </li>
               <li>
-                <Link to="/pricing" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+                <Link to="/pricing" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Clients</Link>
               </li>
-              <li>
-                <Link to="/blog" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Blog</Link>
-              </li>
+              {/* <li>
+                <Link to="/blog" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Jobs</Link>
+              </li> */}
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">About us</Link>
               </li>
+              <li>
+                <Link to="/about" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Blog</Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Contact</Link>
+              </li>
               {/* 1st level: hover */}
-              <Dropdown title="Support">
-                {/* 2nd level: hover */}
+              {/* <Dropdown title="Support">
+                2nd level: hover
                 <li>
                   <Link to="/contact" className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">Contact us</Link>
                 </li>
@@ -76,19 +82,18 @@ function Header() {
                 <li>
                   <Link to="/404" className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">404</Link>
                 </li>
-              </Dropdown>
+              </Dropdown> */}
             </ul>
 
             {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
+            {/* <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link to="/signin" className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
               </li>
               <li>
                 <Link to="/signup" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">Sign up</Link>
               </li>
-            </ul>
-
+            </ul> */}
           </nav>
 
           {/* Mobile menu */}
@@ -108,18 +113,21 @@ function Header() {
             <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
               <ul className="bg-gray-800 px-4 py-2">
                 <li>
-                  <Link to="/features" className="flex text-gray-300 hover:text-gray-200 py-2">Features</Link>
+                  <Link to="/features" className="flex text-gray-300 hover:text-gray-200 py-2">Candidates</Link>
                 </li>
                 <li>
-                  <Link to="/pricing" className="flex text-gray-300 hover:text-gray-200 py-2">Pricing</Link>
+                  <Link to="/pricing" className="flex text-gray-300 hover:text-gray-200 py-2">Clients</Link>
                 </li>
                 <li>
-                  <Link to="/blog" className="flex text-gray-300 hover:text-gray-200 py-2">Blog</Link>
+                  <Link to="/blog" className="flex text-gray-300 hover:text-gray-200 py-2">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/about" className="flex text-gray-300 hover:text-gray-200 py-2">About us</Link>
+                  <Link to="/about" className="flex text-gray-300 hover:text-gray-200 py-2">Blog</Link>
                 </li>
-                <li className="py-2 my-2 border-t border-b border-gray-700">
+                <li>
+                  <Link to="/about" className="flex text-gray-300 hover:text-gray-200 py-2">Contact</Link>
+                </li>
+                {/* <li className="py-2 my-2 border-t border-b border-gray-700">
                   <span className="flex text-gray-300 py-2">Support</span>
                   <ul className="pl-4">
                     <li>
@@ -138,12 +146,10 @@ function Header() {
                 </li>
                 <li>
                   <Link to="/signup" className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out">Sign up</Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
-
           </div>
-
         </div>
       </div>
     </header>

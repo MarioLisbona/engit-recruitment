@@ -25,8 +25,8 @@ function Newsletter() {
 
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
-              <h3 className="h3 text-white mb-2">Stay in the loop</h3>
-              <p className="text-purple-200 text-lg">Join our newsletter to get top news before anyone else.</p>
+              <h3 className="h3 text-white mb-2">Sign up for Job alerts</h3>
+              <p className="text-purple-200 text-lg">Register on JobAdder and be the first to receive tailored job alerts for specific keywords and categories.</p>
             </div>
 
             {/* CTA form */}
